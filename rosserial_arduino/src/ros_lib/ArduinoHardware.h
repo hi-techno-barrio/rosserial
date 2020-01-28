@@ -48,6 +48,10 @@
     #include <usb_serial.h>  // Teensy 3.0 and 3.1
     #define SERIAL_CLASS usb_serial_class
   #endif
+#elif defined(_SAMD21G18A)
+#include <Uart.h> // Arduino Zero
+#define SERIAL_CLASS Uart
+
 #elif defined(_SAM3XA_)
   #include <UARTClass.h>  // Arduino Due
   #define SERIAL_CLASS UARTClass
