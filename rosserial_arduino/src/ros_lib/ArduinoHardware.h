@@ -48,9 +48,15 @@
     #include <usb_serial.h>  // Teensy 3.0 and 3.1
     #define SERIAL_CLASS usb_serial_class
   #endif
+
+// Hi-Techno Barrio
 #elif defined(_SAMD21G18A)
-#include <Uart.h> // Arduino Zero
-#define SERIAL_CLASS Uart
+  #include <Uart.h> // Arduino Zero
+  #define SERIAL_CLASS Uar
+// #include <board_driver_serial.h>
+// #define SERIAL_CLASS board_driver_serial
+
+ #define SERIAL_CLASS board_serial
 
 #elif defined(_SAM3XA_)
   #include <UARTClass.h>  // Arduino Due
