@@ -50,7 +50,7 @@
   #endif
 
 // Hi-Techno Barrio
-#elif defined(_SAMD21G18A)
+#elif defined(_SAMD21G18A_)
   #include <Uart.h> // Arduino Zero
   #define SERIAL_CLASS Uar
 // #include <board_driver_serial.h>
